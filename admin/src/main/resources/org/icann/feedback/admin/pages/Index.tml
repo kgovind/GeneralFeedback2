@@ -1,0 +1,34 @@
+<html t:type="layout" title="admin Index"
+      t:sidebarTitle="Current Time"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+        <!-- Most of the page content, including <head>, <body>, etc. tags, comes from Layout.tml -->
+
+    <p>${message:greeting}</p>
+
+    <p>The current time is: <strong>${currentTime}</strong></p>
+
+    <!-- A Zone is a component that can be updated in place, triggered by other components. -->
+    <t:zone t:id="zone">
+        <p>
+            Please post your reply here...
+        </p>
+
+
+
+    </t:zone>
+
+    <p:sidebar>
+        <p>
+            The current time is: <strong>${currentTime}</strong>.
+        </p>
+
+
+        <p>
+            [
+            <t:pagelink page="Index">refresh page</t:pagelink>
+            ]
+        </p>
+    </p:sidebar>
+
+</html>

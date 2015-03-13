@@ -19,6 +19,7 @@ import org.slf4j.Logger;
  */
 public class AppModule
 {
+    //bind
     public static void bind(ServiceBinder binder)
     {
         // binder.bind(MyServiceInterface.class, MyServiceImpl.class);

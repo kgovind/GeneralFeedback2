@@ -17,6 +17,7 @@ import org.slf4j.Logger;
  * This module is automatically included as part of the Tapestry IoC Registry if <em>tapestry.execution-mode</em>
  * includes <code>development</code>.
  */
+ //Public class
 public class DevelopmentModule
 {
     public static void contributeApplicationDefaults(
